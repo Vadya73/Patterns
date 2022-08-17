@@ -1,8 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-namespace Assets.Patterns.Fabric.Scripts
+namespace Assets.Patterns.FactoryMethod.Scripts.SomethingFactorys.Something
 {
     public class SomethingFactory : GenericSomethingFactory<Transform>
     {

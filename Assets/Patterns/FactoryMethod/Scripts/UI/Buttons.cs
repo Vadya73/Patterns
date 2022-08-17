@@ -1,6 +1,9 @@
-﻿using UnityEngine;
+﻿using Assets.Patterns.FactoryMethod.Scripts.Factorys.Archers;
+using Assets.Patterns.FactoryMethod.Scripts.Factorys.Warriors;
+using Assets.Patterns.FactoryMethod.Scripts.SomethingFactorys.Something;
+using UnityEngine;
 
-namespace Assets.Patterns.Fabric.Scripts
+namespace Assets.Patterns.FactoryMethod.Scripts.UI
 {
     public class Buttons : MonoBehaviour
     {
@@ -8,18 +11,18 @@ namespace Assets.Patterns.Fabric.Scripts
         [SerializeField] private WarriorFactory _warriorFactory;
         [SerializeField] private SomethingFactory _somethingFactory;
 
-        public void ArcherButton()
+        public void SpawnArcher()
         {
             var prefab = _archerFactory.GetNewInstance();
         }
 
-        public void WarriorButton()
+        public void SpawnWarrior()
         {
             var prefab = _warriorFactory.GetNewInstance();
 
         }
 
-        public void SomethingButton()
+        public void SpawnSomething()
         {
             var prefab = _somethingFactory.GetNewInstance();
 

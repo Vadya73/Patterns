@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Assets.Patterns.Fabric.Scripts
+namespace Assets.Patterns.FactoryMethod.Scripts.SomethingFactorys
 {
     public class GenericSomethingFactory<T> : MonoBehaviour where T : Transform
     {
